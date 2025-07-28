@@ -58,7 +58,7 @@ Node* input_tree()
     if(root != NULL)
         q.push(root);
 
-        
+
     while(!q.empty())
     {
         // 1. Node er value ber kore ene store kora;
@@ -105,6 +105,14 @@ Node* input_tree()
 
 int level_order(Node* root)
 {
+
+    if(root == NULL)
+    {
+        cout << "No Tree" << endl;
+        return 0;
+    }
+
+
     queue<Node*> q;
     q.push(root);
 
